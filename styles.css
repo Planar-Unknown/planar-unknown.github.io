@@ -1,23 +1,81 @@
-h1 {
-    margin-left: min(33%, 200px);
-    max-width: 70%;
-    text-align:center;
+/* General Reset */
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: black; /* Primary background */
+    color: #a46ee9; /* Primary text color for main background */
+    line-height: 1.6;
 }
 
-p.sidebar {
-    text-align: center
-    text-align-ver: center
+h1 {
+    margin-left: 0px; /* Scales with the sidebar */
+    max-width: 70%; /* Limits size scaling */
+    text-align: left;
+    color: #36c4f0; /* Secondary background primary text */
+    margin-top: 20px;
+}
+
+#main {
+    margin-left: min(33%, 200px); /* Matches sidebar scaling */
+    padding: 20px;
+    background-color: #221660; /* Secondary background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+#main p {
+    margin-bottom: 15px;
+    color: #5b4dd9; /* Text secondary color for main background */
 }
 
 #sidebar {
-    border-style: dashed;
-    border-color: black;
-    background-color: beige;
+    padding-top: 10px;
+    background-color: #36c4f0; /* Sidebar background */
     height: 100%;
-    width: 30%;
-    max-width: 200px;
-    position:fixed;
+    width: min(30%, 200px); /* Scales with viewport */
+    position: fixed;
     top: 0;
     left: 0;
-    bottom: 120%;
+    bottom: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#sidebar h2 {
+    color: #221660;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sidebar a.social {
+    display: block;
+    text-decoration: none;
+    color: #062a29;
+    background-color: #5b4dd9;
+    padding: 10px 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#sidebar a.social:hover {
+    background-color: #062a29; /* On hover */
+    color: #36c4f0;
+    transform: scale(1.05);
+}
+
+footer {
+    padding-left: min(33%, 200px); /* Scales with the sidebar */
+    ;
+    text-align: left;
+    margin: 20px 0;
+    color: #5b4dd9;
+    font-size: 0.9rem;
 }
