@@ -1,0 +1,16 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+
+# ignore /.idea/ settings
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/GithubPageProject.iml
+
+
+#ignore .gitignore
+/.gitignore
+
+#ignore utility scripts
+/utilities
