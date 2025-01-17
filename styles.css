@@ -1,3 +1,22 @@
 h1 {
+    margin-left: min(33%, 200px);
+    max-width: 70%;
     text-align:center;
+}
+
+p.sidebar {
+    text-align: center
+    text-align-ver: center
+}
+
+#sidebar {
+    border-style: dashed;
+    border-color: black;
+    background-color: beige;
+    height: 100%;
+    width: 30%;
+    max-width: 200px;
+    position:fixed;
+    top: 0;
+    left: 0;
 }
