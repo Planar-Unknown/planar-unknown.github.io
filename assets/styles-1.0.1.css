@@ -1,0 +1,124 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: black;
+    color: #a46ee9;
+    line-height: 1.6;
+}
+
+#banner {
+    background-color:#062f41;
+    width: 100%;
+    height: auto+200px;
+    transform: scale(110%);
+    z-index: -1;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: -1;
+}
+
+#main {
+    padding-left: min(33%, 220px);
+    border-radius: 8px;
+    height: auto;
+    z-index:1;
+}
+
+#main h1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0;
+    text-align: left;
+/*    background-color: #36c4f0;*/
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: attr(width);
+    z-index: 2;
+}
+
+#main p {
+    margin: 20px 20px 15px 20px;
+    color: #958bf8;
+}
+
+#sidebar {
+    padding-top: 10px;
+    background-color: #221660;
+    height: 100%;
+    width: min(30%, 200px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/*Quick Links*/
+#sidebar h2 {
+    color: #a98bea;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Buttons Normal*/
+#sidebar a.button {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #a98bea;
+    padding: 10px 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/*Buttons Hover*/
+#sidebar a.button:hover {
+    background-color: #062f41;
+    color: #36c4f0;
+    transform: scale(1.05);
+}
+
+
+/*Email Button Normal*/
+#email {
+    display: block;
+    text-decoration: none;
+    color: #36c4f0;
+    background-color: #062f41;
+/*    padding: 10px 15px;*/
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#email-link {
+    font-size: 9px;
+    font-weight: 1;
+    color: white;
+    text-decoration:none;
+    font-family: Condensed Thin, sans-serif;
+}
+
+footer {
+    padding-left: min(33%, 220px);
+    text-align: left;
+    margin: 20px 0;
+    color: #5b4dd9;
+    font-size: 0.9rem;
+}
